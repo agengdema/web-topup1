@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dream Store</title>
+    <script src="../javascript/script.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="../javascript/user.js" defer></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="left-header">
+            <div class="logo">
+                <a href="../html/index.html">
+                    <img src="../bg/logo.png" width="40" height="40" />
+                </a>
+            </div>
+
+            <!--item dengan svg di kiri-->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../html/index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                    <path
+                                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                </svg>
+                                Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/calculator.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="16" height="20" x="4" y="2" rx="2" />
+                                    <line x1="8" x2="16" y1="6" y2="6" />
+                                    <line x1="16" x2="16" y1="14" y2="18" />
+                                    <path d="M16 10h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M8 14h.01" />
+                                    <path d="M12 18h.01" />
+                                    <path d="M8 18h.01" />
+                                </svg>
+                                Kalkulator
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/about.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                                Tentang
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../html/contact.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Tombol search di kanan-->
+        <div class="right-header">
+            <div class="search-box">
+                <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 26 26" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+                <input type="text" id="searchInput" placeholder="Cari Game atau Voucher" class="search-input" />
+                <div id="suggestions" class="suggestions-box"></div>
+            </div>
+            <div id="authSection">
+                <div class="user-info" id="userInfo">
+                    <a href="../html/login.html" class="btn-log">Masuk</a>
+                    <a href="../html/register.html" class="btn-daftar">Daftar</a>
+                </div>
+
+                <div class="user-info" id="userInfo">
+                    <button class="user-button" id="userButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-user-icon lucide-circle-user">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="10" r="3" />
+                            <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                        </svg>
+                        <span id="usernameDisplay"></span>
+                    </button>
+                    <div class="user-dropdown" id="userDropdown" style="display: none;">
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Main Content-->
+    <section class="banner">
+        <img src="../bg/ff-bg.png" alt="Free Fire Header" class="banner-image">
+        <div class="banner-text">
+            <h1>Top Up Diamond Free Fire</h1>
+            <p>Proses cepat dan aman, diamond langsung masuk ke akun Anda!</p>
+        </div>
+    </section>
+    <div class="ff-container">
+        <!-- Sidebar Kontak -->
+        <div class="ff-sidebar">
+            <div class="ff-contact-title">Dream Store</div>
+
+            <div class="ff-contact-item">
+                <div class="ff-contact-label">Proses Cepat</div>
+                <div class="ff-contact-value">Top-up langsung masuk, tanpa nunggu lama.
+                </div>
+            </div>
+
+            <div class="ff-contact-item">
+                <div class="ff-contact-label">Harga Termurah</div>
+                <div class="ff-contact-value">Tanpa biaya tambahan, jelas dan hemat.</div>
+            </div>
+
+            <div class="ff-contact-item">
+                <div class="ff-contact-label">Aman & Terpercaya</div>
+                <div class="ff-contact-value">Transaksi aman, gak pake ribet.</div>
+            </div>
+
+            <div style="margin-top: 2rem; font-size: 0.8rem; color: #777; text-align: center;">
+                Layanan resmi dan 100% aman
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="ff-main">
+            <div class="ff-header">
+                <h1 class="ff-title">Top Up Diamond Free Fire</h1>
+            </div>
+
+            <div class="ff-form-group">
+                <label class="ff-form-label">Masukkan ID Free Fire</label>
+                <input type="text" class="ff-form-input" placeholder="Contoh: 1234567890" id="ff-id-input">
+                <div class="ff-save-id">
+                    <input type="checkbox" id="ff-save-id">
+                    <label for="ff-save-id" class="ff-tekscheck">Simpan ID untuk pembelian berikutnya</label>
+                </div>
+            </div>
+
+            <div class="ff-form-group">
+                <label class="ff-form-label">Pilih Paket Diamond</label>
+                <div class="ff-package-grid">
+                    <div class="ff-package-card selected">
+                        <div class="ff-package-badge">TERPOPULER</div>
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="720 Diamond">
+                        </div>
+                        <div class="ff-package-name">720 Diamond</div>
+                        <div class="ff-package-price">Rp 0</div>
+                    </div>
+                    <div class="ff-package-card">
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="355 Diamond">
+                        </div>
+                        <div class="ff-package-name">355 Diamond</div>
+                        <div class="ff-package-price">Rp 70.000</div>
+                    </div>
+                    <div class="ff-package-card">
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="140 Diamond">
+                        </div>
+                        <div class="ff-package-name">140 Diamond</div>
+                        <div class="ff-package-price">Rp 28.000</div>
+                    </div>
+                    <div class="ff-package-card">
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="70 Diamond">
+                        </div>
+                        <div class="ff-package-name">70 Diamond</div>
+                        <div class="ff-package-price">Rp 14.000</div>
+                    </div>
+                    <div class="ff-package-card">
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="50 Diamond">
+                        </div>
+                        <div class="ff-package-name">50 Diamond</div>
+                        <div class="ff-package-price">Rp 10.000</div>
+                    </div>
+                    <div class="ff-package-card">
+                        <div class="ff-package-image">
+                            <img src="../iconpay/ffdiamond.png" alt="12 Diamond">
+                        </div>
+                        <div class="ff-package-name">12 Diamond</div>
+                        <div class="ff-package-price">Rp 2.500</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ff-payment-section">
+                <div class="ff-payment-title active" id="ff-ewallet-title">
+                    <span><i class="fas fa-wallet"></i> E-Wallet</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="ff-payment-options active" id="ff-ewallet-options">
+                    <div class="ff-payment-option selected">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/dana.png" alt="DANA">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">DANA</div>
+                            <div class="ff-payment-fee">Tanpa biaya admin</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/ovo.png" alt="OVO">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">OVO</div>
+                            <div class="ff-payment-fee">Tanpa biaya admin</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/gopay.png" alt="Gopay">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">Gopay</div>
+                            <div class="ff-payment-fee">Tanpa biaya admin</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/linkaja.png" alt="LinkAja">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">LinkAja</div>
+                            <div class="ff-payment-fee">Tanpa biaya admin</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                </div>
+
+                <div class="ff-payment-title" id="ff-bank-title">
+                    <span><i class="fas fa-university"></i> Transfer Bank</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="ff-payment-options" id="ff-bank-options">
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/bca.png" alt="BCA">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">BCA</div>
+                            <div class="ff-payment-fee">Biaya admin Rp 2.500</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/bri.png" alt="BRI">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">BRI</div>
+                            <div class="ff-payment-fee">Biaya admin Rp 2.500</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/bni.png" alt="BNI">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">BNI</div>
+                            <div class="ff-payment-fee">Biaya admin Rp 2.500</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                </div>
+
+                <div class="ff-payment-title" id="ff-retail-title">
+                    <span><i class="fas fa-store">Convenience Store</span></i>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="ff-payment-options" id="ff-retail-options">
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/alfamart.png" alt="Alfamart">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">Alfamart</div>
+                            <div class="ff-payment-fee">Biaya admin Rp 3.000</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/indomaret.png" alt="Indomaret">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">Indomaret</div>
+                            <div class="ff-payment-fee">Biaya admin Rp 3.000</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                </div>
+
+                <div class="ff-payment-title" id="ff-qris-title">
+                    <span><i class="fas fa-qrcode"></i> QRIS (Semua Pembayaran)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="ff-payment-options" id="ff-qris-options">
+                    <div class="ff-payment-option">
+                        <div class="ff-payment-icon">
+                            <img src="../payment/QRIS.png" alt="BNI">
+                        </div>
+                        <div class="ff-payment-info">
+                            <div class="ff-payment-name">QRIS</div>
+                            <div class="ff-payment-fee">Tanpa biaya admin</div>
+                        </div>
+                        <div class="ff-payment-price">Rp 0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ff-summary">
+                <div class="ff-summary-title">
+                    <i class="fas fa-receipt">Ringkasan Pembayaran
+                </div></i>
+                <div class="ff-summary-row">
+                    <span class="ff-summary-label">0 Diamond</span>
+                    <span class="ff-summary-value">Rp 0</span>
+                </div>
+                <div class="ff-summary-row">
+                    <span class="ff-summary-label">Biaya Admin</span>
+                    <span class="ff-summary-value">Rp 0</span>
+                </div>
+                <div class="ff-summary-row">
+                    <span class="ff-summary-label ff-summary-total">Total Pembayaran</span>
+                    <span class="ff-summary-value ff-summary-total">Rp 0</span>
+                </div>
+            </div>
+
+            <button class="ff-checkout-btn ff-pulse">
+                <i class="fas fa-bolt"></i> LANJUTKAN PEMBAYARAN
+            </button>
+
+            <div class="ff-review">
+                <div class="ff-rating">4.8 ★★★★★★</div>
+                <div class="ff-review-text">Berdasarkan 3.54 juta ulasan dari pelanggan kami.</div>
+            </div>
+
+            <div class="ff-help">
+                Butuh bantuan? <a href="../html/contact.html">Hubungi Kami</a> yang siap membantu 24/7.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Package Selection
+        document.querySelectorAll('.ff-package-card').forEach(card => {
+            card.addEventListener('click', function () {
+                document.querySelectorAll('.ff-package-card').forEach(c => {
+                    c.classList.remove('selected');
+                });
+                this.classList.add('selected');
+
+                // Update payment summary
+                const price = this.querySelector('.ff-package-price').textContent;
+                document.querySelector('.ff-summary-row:nth-child(2) .ff-summary-value').textContent = price;
+                document.querySelector('.ff-summary-row:nth-child(4) .ff-summary-value').textContent = price;
+
+                // Update payment options
+                document.querySelectorAll('.ff-payment-option').forEach(option => {
+                    const feeElement = option.querySelector('.ff-payment-fee');
+                    let fee = 0;
+
+                    if (feeElement.textContent.includes('Rp')) {
+                        fee = parseInt(feeElement.textContent.replace(/\D/g, ''));
+                    }
+
+                    const total = parseInt(price.replace(/\D/g, '')) + fee;
+                    option.querySelector('.ff-payment-price').textContent = `Rp ${total.toLocaleString('id-ID')}`;
+                });
+            });
+        });
+
+        // Payment Method Selection
+        document.querySelectorAll('.ff-payment-option').forEach(option => {
+            option.addEventListener('click', function () {
+                document.querySelectorAll('.ff-payment-option').forEach(o => {
+                    o.classList.remove('selected');
+                });
+                this.classList.add('selected');
+
+                // Update payment summary with fee
+                const priceText = this.querySelector('.ff-payment-price').textContent;
+                const feeText = this.querySelector('.ff-payment-fee').textContent;
+
+                let fee = 0;
+                if (feeText.includes('Rp')) {
+                    fee = parseInt(feeText.replace(/\D/g, ''));
+                }
+
+                const basePrice = parseInt(priceText.replace(/\D/g, '')) - fee;
+
+                document.querySelector('.ff-summary-row:nth-child(2) .ff-summary-value').textContent = `Rp ${basePrice.toLocaleString('id-ID')}`;
+                document.querySelector('.ff-summary-row:nth-child(3) .ff-summary-value').textContent = fee > 0 ? `Rp ${fee.toLocaleString('id-ID')}` : 'Rp 0';
+                document.querySelector('.ff-summary-row:nth-child(4) .ff-summary-value').textContent = `Rp ${(basePrice + fee).toLocaleString('id-ID')}`;
+            });
+        });
+
+        // Payment Method Dropdowns
+        document.querySelectorAll('.ff-payment-title').forEach(title => {
+            title.addEventListener('click', function () {
+                const optionsId = this.id.replace('-title', '-options');
+                const options = document.getElementById(optionsId);
+
+                // Toggle active class
+                this.classList.toggle('active');
+                options.classList.toggle('active');
+
+                // Rotate chevron icon
+                const icon = this.querySelector('i.fa-chevron-down');
+                icon.style.transform = this.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+
+        // Checkout Button Animation
+        const checkoutBtn = document.querySelector('.ff-checkout-btn');
+        checkoutBtn.addEventListener('mouseenter', function () {
+            this.classList.add('ff-pulse');
+        });
+
+        checkoutBtn.addEventListener('mouseleave', function () {
+            this.classList.remove('ff-pulse');
+        });
+
+        checkoutBtn.addEventListener('click', function () {
+            // Validate ID input
+            const idInput = document.getElementById('ff-id-input');
+            if (!idInput.value || idInput.value.length < 6) {
+                alert('Masukkan ID Free Fire yang valid!');
+                idInput.focus();
+                return;
+            }
+
+            // Show processing animation
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> MEMPROSES...';
+            this.style.opacity = '0.7';
+            this.disabled = true;
+
+            // Simulate payment processing
+            setTimeout(() => {
+                alert('Pembayaran berhasil! Diamond akan segera dikirim ke akun Anda.');
+                this.innerHTML = '<i class="fas fa-bolt"></i> LANJUTKAN PEMBAYARAN';
+                this.style.opacity = '1';
+                this.disabled = false;
+            }, 2000);
+        });
+    </script>
+
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-right">
+                <img src="../bg/logo-desk.png" alt="Logo" class="footer-logo" />
+                <p class="footer-description">
+                    Website topup terpercaya untuk berbagai game populer. Proses cepat, aman, dan terpercaya.
+                </p>
+            </div>
+
+            <div class="footer-left">
+                <div class="footer-section">
+                    <h4>Peta Situs</h4>
+                    <ul>
+                        <li><a href="../html/index.html">Beranda</a></li>
+                        <li><a href="../html/register.html">Daftar</a></li>
+                        <li><a href="../html/login.html">Masuk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><a href="mailto:samudrabisma6@gmail.com" target="_blank">Email</a></li>
+                        <li><a href="https://wa.me/6283144079145" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="../html/terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="../html/policy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Dream Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
