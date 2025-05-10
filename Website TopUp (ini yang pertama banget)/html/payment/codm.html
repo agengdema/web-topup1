@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Web Topup</title>
+    <script src="../javascript/script.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="left-header">
+            <div class="logo">
+                <img src="../../picture/e.jpg" width="40" height="40" />
+            </div>
+
+            <!--item dengan svg di kiri-->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../../html/index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                    <path
+                                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                </svg>
+                                Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../html/calculator.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="16" height="20" x="4" y="2" rx="2" />
+                                    <line x1="8" x2="16" y1="6" y2="6" />
+                                    <line x1="16" x2="16" y1="14" y2="18" />
+                                    <path d="M16 10h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M8 14h.01" />
+                                    <path d="M12 18h.01" />
+                                    <path d="M8 18h.01" />
+                                </svg>
+                                Kalkulator
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../html/about.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                                Tentang
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../html/contact.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Tombol search di kanan-->
+        <div class="right-header">
+            <div class="search-box">
+                <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 26 26" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+                <input type="text" placeholder="Cari Game atau Voucher" class="search-input" />
+            </div>
+            <a href="../../html/login.html" class="btn-log">Masuk</a>
+            <a href="../../html/register.html" class="btn-daftar">Daftar</a>
+        </div>
+    </header>
+
+    <!--konten disini-->
+
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-main">
+          <div class="footer-right">
+            <img src="../bg/logo.png" alt="Logo" class="footer-logo" />
+            <p class="footer-description">
+              Website top-up terpercaya untuk berbagai game populer. Proses cepat, aman, dan terpercaya.
+            </p>
+          </div>
+      
+          <div class="footer-left">
+            <div class="footer-section">
+              <h4>Peta Situs</h4>
+              <ul>
+                <li><a href="../html/index.html">Beranda</a></li>
+                <li><a href="../html/register.html">Daftar</a></li>
+                <li><a href="../html/login.html">Masuk</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Hubungi Kami</h4>
+              <ul>
+                <li><a href="mailto:email@example.com" target="_blank">Email</a></li>
+                <li><a href="https://wa.me/6281234567890" target="_blank">WhatsApp</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Informasi</h4>
+              <ul>
+                <li><a href="../html/terms.html">Syarat & Ketentuan</a></li>
+                <li><a href="../html/policy.html">Kebijakan Privasi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="copyright">
+          <p>© 2025 WEBTOPUP. All rights reserved.</p>
+        </div>
+      </footer> 
+</body>
+
+</html>
